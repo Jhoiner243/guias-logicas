@@ -5,5 +5,7 @@ console.log(duplicar(4)); // 8
 
 //Retorno explicito seria:
 
-const triplicar = (t) => t * 3 //Retorna t * 3
+const triplicar = (t) => {
+  return t * 3; // Retorna t * 3
+} 
 console.log(triplicar(3)) // 9

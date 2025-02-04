@@ -22,3 +22,14 @@ function generarIDSeguro(longitud = 5) {
 }
 
 console.log(generarIDSeguro()); // Ejemplo: "3aB7f"
+
+const usuarios = []
+
+function newUsuarios (nombre, apellido) {
+  const id = generarIDSeguro(8)
+  const usuario = {id, nombre, apellido}
+  usuarios.push(usuario)
+  return usuario
+}
+
+console.log(newUsuarios("Jhoiner", "Martinez"))
